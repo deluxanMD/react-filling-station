@@ -27,7 +27,7 @@ const SearchInput = ({ handleSearch, handleClose }: SearchInputType) => {
   return (
     <FormControl
       variant="standard"
-      sx={{ m: 1, mt: 3, width: isMobile ? "95%" : "40ch" }}
+      sx={{ m: 1, mt: 3, width: isMobile ? "95%" : "40ch", zIndex: 9999 }}
     >
       <FilledInput
         id="search-input"

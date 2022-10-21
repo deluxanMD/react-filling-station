@@ -1,0 +1,6 @@
+#icon-pills-list {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  margin-left: 15px;
+}
