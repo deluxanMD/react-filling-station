@@ -3,13 +3,13 @@ import { Fragment } from "react";
 import "./App.css";
 import Map from "./pages/map/map.component";
 
-function App() {
+const App = () => {
   return (
     <Fragment>
       <CssBaseline />
       <Map />
     </Fragment>
   );
-}
+};
 
 export default App;

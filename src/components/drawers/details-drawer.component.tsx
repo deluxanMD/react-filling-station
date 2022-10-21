@@ -1,4 +1,5 @@
 import { SwipeableDrawer } from "@mui/material";
+import { useFSTheme } from "../../hooks/theme.helpers";
 
 type DetailsDrawerType = {
   open: boolean;
@@ -11,6 +12,8 @@ const DetailsDrawer = ({
   handleOpen,
   handleClose,
 }: DetailsDrawerType) => {
+  const { isMobile } = useFSTheme();
+
   return (
     <SwipeableDrawer
       anchor="left"
@@ -18,7 +21,7 @@ const DetailsDrawer = ({
       onClose={handleClose}
       onOpen={handleOpen}
     >
-      <p>Details</p>
+      <div style={{ width: isMobile ? "100%" : "42ch" }}></div>
     </SwipeableDrawer>
   );
 };
