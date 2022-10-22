@@ -17,6 +17,7 @@ const DetailsDrawer = ({
   return (
     <SwipeableDrawer
       anchor="left"
+      variant="persistent"
       open={open}
       onClose={handleClose}
       onOpen={handleOpen}
