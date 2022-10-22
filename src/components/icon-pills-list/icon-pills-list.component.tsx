@@ -1,8 +1,7 @@
-import { Box } from "@mui/system";
 import { FuelType } from "../../constants/fuel-types";
 import { useFSTheme } from "../../hooks/theme.helpers";
-import IconPills from "./icon-pills.component";
-import "./icon-pills.styles.css";
+import IconPills from "./icon-pills/icon-pills.component";
+import * as S from "./icon-pills-list.styles";
 
 type IconsPillsListType = {
   fuelTypes: FuelType[];
@@ -12,13 +11,13 @@ const IconsPillsList = ({ fuelTypes }: IconsPillsListType) => {
   const { isMobile } = useFSTheme();
 
   return (
-    <Box id="icon-pills-list" sx={{ width: isMobile ? "100%" : "auto" }}>
+    <S.Container sx={{ width: isMobile ? "100%" : "auto" }}>
       {fuelTypes.map((fuelType) => (
-        <Box mr={1}>
-          <IconPills label={fuelType.label} key={fuelType.id} />
-        </Box>
+        <S.PillsContainer mr={1} key={fuelType.id}>
+          <IconPills label={fuelType.label} />
+        </S.PillsContainer>
       ))}
-    </Box>
+    </S.Container>
   );
 };
 

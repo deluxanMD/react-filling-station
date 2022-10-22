@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 import { useState } from "react";
 import DetailsDrawer from "../../components/drawers/details-drawer.component";
 import SearchInput from "../../components/forms/search-input.component";
-import IconsPillsList from "../../components/icon-pills/icon-pills-list.component";
+import IconsPillsList from "../../components/icon-pills-list/icon-pills-list.component";
 import { FUEL_TYPES } from "../../constants/fuel-types";
 import { useFSTheme } from "../../hooks/theme.helpers";
 
