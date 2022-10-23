@@ -6,6 +6,7 @@ export const Container = styled(Box)`
   flex-direction: row;
   overflow: scroll;
   margin-left: 15px;
+  z-index: 9999;
 `;
 
 export const PillsContainer = styled(Box)``;
